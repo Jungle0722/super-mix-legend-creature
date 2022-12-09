@@ -408,7 +408,7 @@ func equipBox():
 
 	for i in itemData.rndPool.items:
 		var itemId = i[0].id
-		if itemId == "i_azurline_u":continue
+		# if itemId == "i_azurline_u":continue
 		var itemPanel = Panel.new()
 		itemPanel.name = "panel"
 		itemPanel.rect_min_size = Vector2(100, 120)
