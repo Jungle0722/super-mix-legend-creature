@@ -92,7 +92,7 @@ func azurlineUtilsInit():
 	
 #获得随机装备ID
 func getRandomItem(type = "DEFAULT"):
-	return sys.rndListItem(consts.itemAll)
+		return sys.rndListItem(consts.itemAll)
 
 #获得随机技能书，若未指定稀有度，则按照当前玩家等级动态获得稀有度
 func getRandomSkillBook(r = null):
