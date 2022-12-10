@@ -1,1 +1,0 @@
-{"dir":"D:/SteamLibrary/steamapps/common/Legend monster/modset/tools","id":2100994619,"info":"版本号：v2.1\n\n简介：为MOD开发者制作的基础MOD，内置一个模板供格式参考\n\n提供三个信号：\nonNewGame    #选人界面时发射信号\nonLoadGame   #读取完成时发射信号\nonSaveGame   #退回标题页面时发射信号\n\n提供全局变量的固化存储功能，可以在读取游戏时取用","png":"D:/SteamLibrary/steamapps/common/Legend monster/modset/baseicon.png","tile":"BaseTools"}

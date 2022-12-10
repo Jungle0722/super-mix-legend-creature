@@ -1376,16 +1376,15 @@ class b_heAmmo:
 			att.reHp = -0.3
 		else:
 			att.reHp = -0.6
-#黯灭Debuff
-class Dt_DefenseReduce:
+#黯灭Debuff 被攻击的单位减少35%护甲，持续3秒 
+class b_Dt_DefenseReduce:
 	extends Buff
 	var buffName = "黯灭Debuff"
 	var dispel = 2
 	func _init(lv=1,MasDef=0):
 		attInit()
 		att.def -= MasDef * 0.35
-		effId = "p_liuXue"
 		life = 3
-		id = "Dt_DefenseReduce"
+		id = "b_Dt_DefenseReduce"
 		isNegetive=true
 				

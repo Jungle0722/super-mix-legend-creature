@@ -241,6 +241,7 @@ func synthesis(cha):
 	sys.main.player.plusGold(10000)
 	azurCtrl.plusPt(10000)
 	var newEquip = sys.newItem("i_Hide_al_equipBox")
+	var newEquip = sys.newItem("i_Hide_al_directBox")
 	sys.main.player.addItem(newEquip)
 	var p = 1 + a.ronglian
 	a.att.maxHp += b.att.maxHp*p
@@ -350,7 +351,7 @@ func directBox():
 	var itemGrid = utils.createGridContainer(itemWindow, 7)
 	itemGrid.rect_position = Vector2(20, 20)
 	itemGrid.set_custom_minimum_size(Vector2(800,0))
-	for i in utils.consts.itemsRare:
+	for i in utils.consts.itemAll:
 		var itemPanel = Panel.new()
 		itemPanel.name = "panel"
 		itemPanel.rect_min_size = Vector2(100, 120)
@@ -408,7 +409,7 @@ func equipBox():
 
 	for i in itemData.rndPool.items:
 		var itemId = i[0].id
-		# if itemId == "i_azurline_u":continue
+		if itemId == "i_azurline_u":continue
 		var itemPanel = Panel.new()
 		itemPanel.name = "panel"
 		itemPanel.rect_min_size = Vector2(100, 120)

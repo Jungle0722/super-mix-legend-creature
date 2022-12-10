@@ -14,6 +14,6 @@ func Ready(atkInfo:AtkInfo):
 		var BUFF = atkInfo.hitCha.hasBuff("Dt_DefenseReduce")
 		if BUFF != null:
 			BUFF.isDel = true
-			atkInfo.hitCha.addBuff(Dt_DefenseReduce.new(1,atkInfo.hitCha.att.def))
+			atkInfo.hitCha.addBuff(utils.buffs.b_Dt_DefenseReduce.new(1, masCha))
 		else:
-			atkInfo.hitCha.addBuff(Dt_DefenseReduce.new(1,atkInfo.hitCha.att.def))
+			atkInfo.hitCha.addBuff(utils.buffs.b_Dt_DefenseReduce.new(1, masCha))
