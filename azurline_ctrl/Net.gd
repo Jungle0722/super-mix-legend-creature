@@ -35,7 +35,7 @@ func connectServer():
 func sendRequest(path, method = HTTPClient.METHOD_GET, body = "", reSendCount = 0):
 	if http.get_status() != HTTPClient.STATUS_CONNECTED:
 		print("服务器断开，重连服务器中...")
-		connectServer()
+		#connectServer()
 	var headers
 	if method == HTTPClient.METHOD_POST:
 		headers = [

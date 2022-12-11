@@ -174,7 +174,7 @@ func equipResearch():
 	var rolled = []
 	#roll equips
 	equipTemps.shuffle()
-	while rolled.size() < 3 and not equipTemps.empty():
+	while rolled.size() < 9 and not equipTemps.empty():
 		var r = equipTemps.pop_front()
 		rolled.append(r)
 

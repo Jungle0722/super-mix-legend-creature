@@ -241,7 +241,6 @@ func synthesis(cha):
 	sys.main.player.plusGold(10000)
 	azurCtrl.plusPt(10000)
 	var newEquip = sys.newItem("i_Hide_al_equipBox")
-	var newEquip = sys.newItem("i_Hide_al_directBox")
 	sys.main.player.addItem(newEquip)
 	var p = 1 + a.ronglian
 	a.att.maxHp += b.att.maxHp*p
@@ -260,8 +259,8 @@ func synthesis(cha):
 	a.att.suck += b.att.suck*p
 	a.att.mgiSuck += b.att.mgiSuck*p
 	a.att.reHp += b.att.reHp*p
-	a.att.cd += b.att.cd*p
-	a.att.spd += b.att.spd*p
+	a.att.cd += b.att.cd
+	a.att.spd += b.att.spd
 	a.att.dod += b.att.dod*p
 	a.att.atkR += b.att.atkR*p
 	a.att.penL += b.att.penL*p
@@ -345,10 +344,10 @@ func doGetSpecCha(conf, specChaWindow):
 
 ######################################定向补给箱##############################
 func directBox():
-	var itemWindow = utils.createWindowDialog(sys.main.get_node("ui"), "选择装备", Vector2(800, 600))
+	var itemWindow = utils.createWindowDialog(sys.main.get_node("ui"), "选择装备", Vector2(1300, 600))
 	itemWindow.popup_exclusive = true
 	itemWindow.get_close_button().hide()
-	var itemGrid = utils.createGridContainer(itemWindow, 7)
+	var itemGrid = utils.createGridContainer(itemWindow, 13)
 	itemGrid.rect_position = Vector2(20, 20)
 	itemGrid.set_custom_minimum_size(Vector2(800,0))
 	for i in utils.consts.itemAll:

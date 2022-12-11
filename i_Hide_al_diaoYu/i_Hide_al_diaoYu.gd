@@ -15,12 +15,12 @@ func _connect():
 var flag = true
 
 #稀有装备、舰载机、爱酱、潜水艇、普通装备、轮空
-var rnds = [4, 10, 2, 1, 7, 76]
+var rnds = [30, 10, 2, 1, 7, 76]
 func onBattleEnd():
 	if flag:
 		var rnd = sys.rndRan(1, 100)
 		if rnd <= rnds[0]:
-			print("钓鱼成功：获得稀有装备")
+			print("钓鱼成功：获得装备")
 			sys.main.player.addItem(sys.newItem(utils.getRandomItem("RARE")))
 		elif rnd <= rnds[0] + rnds[1]:
 			print("钓鱼成功：获得舰载机")

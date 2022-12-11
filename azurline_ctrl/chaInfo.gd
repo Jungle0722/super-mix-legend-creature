@@ -149,7 +149,7 @@ func chaInfo(cha):
 	if not exSkillSlot.empty():
 		utils.createItemButton(btnBoxR, self, "额外技能", "exSkills", [charaInfo])
 
-	if not inManual and lv < 3 and team == 1 and not isSumm:
+	if not inManual and lv < 30 and team == 1 and not isSumm:
 		utils.createItemButton(btnBoxR, self, "随机进化", "rndEvo", [cha, charaInfo])	
 
 	if lv < 4:
@@ -287,7 +287,7 @@ func buffDetail(cha, charaInfo):
 	utils.createRichTextLabel("[color=#BDB76B]剩余时间", taskBox, Vector2(150, 50))
 
 	for i in cha.buffs:
-		if i.get("buffName") == null or i.get("type") == config.EQUITYPE_EQUI:continue
+		#if i.get("buffName") == null or i.get("type") == config.EQUITYPE_EQUI:continue
 		utils.createRichTextLabel("[color=#FFA500]" + i.buffName, taskBox, Vector2(200, 50))
 		var type = "[color=#33ff33]增益"
 		if i.isNegetive:type = "[color=#DC143C]减益"
