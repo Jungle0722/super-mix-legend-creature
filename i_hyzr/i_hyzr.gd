@@ -20,11 +20,3 @@ func DoubleAtk(atkInfo:AtkInfo):
 			#atkInfo.hitCha.addBuff(Dt_SladeAtkSpdDefuse.new())
 			hyzrNums = 0
 
-class Dt_SladeAtkSpdDefuse extends Buff:
-	func _init(lv=1):
-		attInit()
-		att.spd -= 0.3
-		effId = "p_jieShuang"
-		life = 2
-		id = "Dt_SladeAtkSpdDefuse"
-		isNegetive=true
