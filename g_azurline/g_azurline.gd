@@ -637,9 +637,9 @@ func testCmd():
 	cmdWindow.popup_centered()
 
 func doCmd(le):
-	if le.text == "azurlaneTest4":
+	if le.text == "4":
 		omg.test4()
-	if le.text == "azurlaneTest3":
+	if le.text == "3":
 		omg.test3()
 	if le.text == "save":
 		sys.main.saveInfo()

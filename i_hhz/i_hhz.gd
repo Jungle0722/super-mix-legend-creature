@@ -1,9 +1,8 @@
-extends Item
+extends "../azurline_base_item/azurline_base_item.gd"
 
 func init():
+	.init()
 	name = "黑皇杖"
-	type = config.EQUITYPE_EQUI
-	attInit()
 	att.maxHp = 350
 	att.atk = 50
 	info = "受到技能伤害进入天神下凡状态，免疫技能伤害，持续8秒\n不受任何负面效果"
@@ -30,10 +29,10 @@ func _upS():
 		hadStarted = true
 
 func Defense(atkInfo:AtkInfo):
-	if atkInfo.atkType == Obj.AtkType.SKILL && Starting == true:
+	if atkInfo.atkType == Chara.AtkType.SKILL && Starting == true:
 		atkInfo.isMiss = true
 		atkInfo.atkType = Chara.AtkType.MISS
-	if atkInfo.atkType == Obj.AtkType.SKILL && Starting == false && hadStarted == false:
+	if atkInfo.atkType == Chara.AtkType.SKILL && Starting == false && hadStarted == false:
 		atkInfo.isMiss = true
 		atkInfo.atkType = Chara.AtkType.MISS
 		Starting = true

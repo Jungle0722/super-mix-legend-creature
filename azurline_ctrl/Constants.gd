@@ -23,11 +23,11 @@ const rareMedis = ["i_Hide_alm_suck", "i_Hide_alm_dod", "i_Hide_alm_pen"]
 
 const flags = ["i_Hide_al_flagcy", "i_Hide_al_flagz", "i_Hide_al_flagx", "i_Hide_al_flagby", "i_Hide_al_flaghj"]
 
-var itemAll = dota2modEquips + itemsSpecial + medis + rareMedis + itemsRare
+var itemAll = itemsPhy + itemsMgi + itemsDef + dota2modEquips + itemsSpecial + medis + rareMedis + itemsRare
 
 var miuEquips = ["i_Hide_al_hotSong", "i_Hide_al_shineSong"]
 
-const dota2modEquips = ["i_am"]
+const dota2modEquips = ["i_am", "i_dcyd", "i_ddlszs", "i_dgzsl", "i_hhz"]
 
 #官方天赋
 var officialTalents = ["t_bf_diYu", "t_bf_jiSu", "t_bf_jieShuang", "t_bf_kuangNu", "t_bf_liuXue", "t_bf_moYu", "t_bf_shaoZhuo", "t_bf_shiMing", "t_bf_zhonDu", 

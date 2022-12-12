@@ -59,7 +59,7 @@ var attEx:Att = Att.new()
 #角色锁定属性区
 var attFx = utils.loadScript("AzurAtt")
 #最大装备上限
-var maxItem = 3
+var maxItem = 4
 #是否使用过金刚钻
 var jgzFlag = false
 

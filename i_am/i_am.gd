@@ -11,9 +11,4 @@ func _connect():
 
 func Ready(atkInfo:AtkInfo):
 	if atkInfo.atkType == Chara.AtkType.NORMAL:
-		var BUFF = atkInfo.hitCha.hasBuff("Dt_DefenseReduce")
-		if BUFF != null:
-			BUFF.isDel = true
-			atkInfo.hitCha.addBuff(utils.buffs.b_Dt_DefenseReduce.new(1, masCha))
-		else:
-			atkInfo.hitCha.addBuff(utils.buffs.b_Dt_DefenseReduce.new(1, masCha))
+		utils.buffs.addAnMie(atkInfo.hitCha, 1)

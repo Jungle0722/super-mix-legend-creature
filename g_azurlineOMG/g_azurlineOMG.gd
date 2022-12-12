@@ -176,14 +176,15 @@ func test3():
 	base.setSetting("achiOther", achiOther)
 
 func test4():
-	sys.main.player.addCha(sys.main.newChara("cex___azurtoolman"))
+	#sys.main.player.addCha(sys.main.newChara("cex___azurtoolman"))
 
-	sys.main.player.addCha(sys.main.newChara("cex___almiu-akagi2"))
-	sys.main.player.addCha(sys.main.newChara("cex___almiu-cleveland3"))
-	sys.main.player.addCha(sys.main.newChara("cex___almiu-dido2"))
-	sys.main.player.addCha(sys.main.newChara("cex___almiu-gascogne2"))
+	#sys.main.player.addCha(sys.main.newChara("cex___almiu-akagi2"))
+	#sys.main.player.addCha(sys.main.newChara("cex___almiu-cleveland3"))
+	#sys.main.player.addCha(sys.main.newChara("cex___almiu-dido2"))
+	#sys.main.player.addCha(sys.main.newChara("cex___almiu-gascogne2"))
 
-	sys.main.player.addItem(sys.newItem("i_Hide_al_jinGangZuan"))
+	#sys.main.player.addItem(sys.newItem("i_Hide_al_jinGangZuan"))
+	sys.main.player.addItem(sys.newItem(utils.getRandomItem("RARE")))
 	
 
 #生成角色唯一ID

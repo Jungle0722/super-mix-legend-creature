@@ -145,6 +145,13 @@ func addBaoLu(target, lv):
 	else:
 		buff.reset(lv)
 
+#添加黯灭破甲BUFF
+func addAnMie(target, lv):
+	var buff = target.hasBuff("b_Dt_DefenseReduce")
+	if buff == null:
+		target.addBuff(b_Dt_DefenseReduce.new(lv))
+	else:
+		buff.reset(lv)
 #-----------------------------------------------------------------------BUFF--------------------------------------------------------------------------
 #重创,魔抗降低50%
 class b_zhongChang:
@@ -1386,5 +1393,14 @@ class b_Dt_DefenseReduce:
 		att.def -= MasDef * 0.35
 		life = 3
 		id = "b_Dt_DefenseReduce"
+		isNegetive=true
+
+class b_Dt_SladeAtkSpdDefuse extends Buff:
+	func _init(lv=1):
+		attInit()
+		att.spd -= 0.3
+		effId = "p_jieShuang"
+		life = 2
+		id = "b_Dt_SladeAtkSpdDefuse"
 		isNegetive=true
 				
