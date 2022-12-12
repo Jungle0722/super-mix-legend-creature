@@ -115,6 +115,7 @@ func showGuide():
 func charaResearch():
 	if researchData < charaCost:
 		sys.newBaseMsg("提示", "科研数据不足，需要：[color=#DC143C]%d"%charaCost)
+		researchData += 100
 		return
 	if charaTemps.empty():
 		sys.newBaseMsg("提示", "已完成全部科研舰娘")

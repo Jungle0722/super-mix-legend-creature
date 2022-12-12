@@ -370,7 +370,7 @@ var ticketLabel
 var helpWindow
 var processLabel
 #挑战券
-var ticket = 0
+var ticket = 10
 #BOSS配置表
 var bossConfig = {
 	"侵扰者":{
@@ -594,6 +594,7 @@ var bossOpts = []
 func doChallenge(name, conf):
 	if ticket <= 0:
 		sys.newBaseMsg("提示", "挑战券不足，无法挑战！")
+		ticket += 1
 		return
 	ticket -= 1
 	refreshTicket()
